@@ -7,6 +7,11 @@ var load_state = {
     },
 
     create: function() {
+    	if (!game.hasOwnProperty('keyboard')) {
+    		game.keyboard = new Keyboard();
+    		console.log("Agrego Keyboard", game.keyboard);
+    	}
+    	
     	game.state.start('play')
     },
 
