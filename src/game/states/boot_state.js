@@ -12,7 +12,7 @@ var boot_state = {
     create: function() {
     	enter_key = game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
     	enter_key.onDown.add(function() {
-    		game.state.start('play');
+    		game.state.start('load');
     	}, this);
     },
 
