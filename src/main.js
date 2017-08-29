@@ -1,7 +1,7 @@
 var game = new Phaser.Game(
     1024,
     576, //768,
-    Phaser.AUTO,
+    Phaser.CANVAS,
     "game"
 );
 
