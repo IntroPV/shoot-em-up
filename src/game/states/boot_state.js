@@ -10,8 +10,11 @@ var boot_state = {
     preload: function() {},
 
     create: function() {
-    	enter_key = game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
-    	enter_key.onDown.add(function() {
+        if (!game.hasOwnProperty('keyboard')) {
+            game.keyboard = new Keyboard();
+        }
+
+    	game.keyboard.enter.onDown.add(function() {
     		game.state.start('load');
     	}, this);
     },

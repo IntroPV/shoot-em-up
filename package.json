@@ -17,5 +17,8 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-open": "~0.2.3",
     "phaser-ce": "~2.8.4"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }
